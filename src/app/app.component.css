@@ -1,0 +1,5 @@
+input:focus {
+  outline:none;
+  border-bottom:2px;
+  border-bottom-color:deepskyblue;
+}

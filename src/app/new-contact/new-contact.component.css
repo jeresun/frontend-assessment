@@ -1,0 +1,26 @@
+input {
+  width:100%;
+  padding:0px 7px;
+  height:30px;
+  line-height:30px;
+  border-width:0px;
+  border-bottom-width:1px;
+  margin-bottom:5px;
+}
+
+input.primaryInput {
+  height:40px;
+  line-height:40px;
+  font-size:18pt;
+  margin-bottom:12px;
+}
+
+span {
+  font-size:10pt;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}

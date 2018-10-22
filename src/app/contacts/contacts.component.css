@@ -1,0 +1,44 @@
+.thumbnail img {
+  width:50px;
+  height:50px;
+  border-radius:25px;
+  border:1px solid #CCC;
+  display:block;
+  margin:0px auto;
+}
+
+.contact-details {
+  font-size:0.9em;
+}
+
+.contact-name {
+  font-size:1.2em;
+  font-weight:bold;
+}
+
+.delete-column {
+  line-height:50px;
+}
+
+.delete-column img {
+  width:16px;
+  height:16px;
+  margin:auto;
+  display:inline;
+  opacity:0.5;
+  cursor:pointer;
+}
+
+.contact-row:hover .delete-column img:hover {
+  opacity:1.0;
+}
+
+@media (min-width: 992px) {
+  .delete-column img {
+    opacity:0.0;
+  }
+  
+  .contact-row:hover .delete-column img {
+    opacity:0.5;
+  }
+}

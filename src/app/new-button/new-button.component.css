@@ -1,0 +1,11 @@
+button {
+  position:fixed;
+  width:60px;
+  height:60px;
+  border-radius:30px;
+  font-size:1.5em;
+  bottom:0px;
+  right:0px;
+  outline:none;
+  cursor:pointer;
+}

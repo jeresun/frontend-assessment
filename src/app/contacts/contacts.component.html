@@ -1,0 +1,18 @@
+<div class="contacts bg-light rounded shadow">
+  <ul class="list-group">
+    <li class="list-group-item list-group-item-action" *ngFor='let contact of contacts; let i = index'>
+      <div class="row contact-row">
+        <div class="col-2 thumbnail">
+          <img src="assets/img/cat-0{{contact.imgId}}.jpg" />
+        </div>
+        <div class="col-9">
+          <div class="d-block contact-name">{{contact.name}}</div>
+          <div class="d-block text-black-50 contact-details">{{contact.phone}} | {{contact.email}}</div>
+        </div>
+        <div class="col-1 delete-column p-0">
+          <img src="assets/img/delete.png" (click)="deleteContact(contact)"/>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

@@ -1,5 +1,12 @@
-<div style="text-align:center">
-  <h1>
+<div class="container">
+  <h1 class="text-light text-center p-3">
     Welcome to {{ title }}!
   </h1>
+  
+  <div class="col-sm-12 col-lg-6 offset-lg-3 p-0">
+    <app-contacts #contactList></app-contacts>
+    <app-new-button (newContactClick)="openNewContactWindow()"></app-new-button>
+    <app-new-contact #newContact (onNewContact)="addNewContact(newContact)"></app-new-contact>
+  </div>
+  
 </div>

@@ -1,0 +1,22 @@
+<ng-template #content let-modal modal-dialog-centered>
+  <div class="modal-header bg-secondary">
+    <h5 class="modal-title text-light" id="modal-basic-title">New Contact</h5>
+    <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form>
+      <div class="form-group">
+        <span class="text-secondary">Enter new contact details</span>
+        <input [(ngModel)]="newContact.name" placeholder="Name" ngbAutofocus class="primaryInput" name="firstLastName">
+        <input [(ngModel)]="newContact.phone" placeholder="Phone '123-456-7890'" name="phone">
+        <input [(ngModel)]="newContact.email" placeholder="Email" name="email">
+      </div>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="modal.close('Cancel')">Cancel</button>
+    <button type="button" class="btn btn-primary" (click)="modal.close('Add');addContact()">Add New Contact</button>
+  </div>
+</ng-template>
